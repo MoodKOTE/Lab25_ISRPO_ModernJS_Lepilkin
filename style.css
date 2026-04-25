@@ -13,7 +13,7 @@ body{
 
 .container{
     max-width: 900px;
-    margin: 0 auto;
+    margin: 10px auto;
     background: white;
     padding: 30px;
     border-radius: 10px;
@@ -29,4 +29,20 @@ h2{
     color: #677eea;
     margin-bottom: 30px;
     font-weight: 400;
+}
+
+.calculator{
+    display: flex;
+    flex-direction: column; 
+    max-width: 900px;
+    margin: 10px auto;
+    gap: 10px;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.error {
+    color: red;
 }

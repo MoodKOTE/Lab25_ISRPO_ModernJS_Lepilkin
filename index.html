@@ -3,14 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab24-26 - Modern JavaScript</title>
+    <title>Lab24-26 - Конвертер валют</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <h1>Lab24-26 - Modern JavaScript</h1>
-        <h2>Современный JavaScript</h2>
+        <h2>Конвертер валют</h2>
     </div>
-    <script type="module" src="js/api.js"></script>
+    <div class="calculator" id="calculator">
+        <p>Введите сумму (в рублях):</p>
+        <input type="number" id="amount" placeholder="Например, 1000">
+        
+        <p>Выберите валюту:</p>
+        <select id="currency">
+            <option value="USD">Доллар США (USD)</option>
+            <option value="EUR">Евро (EUR)</option>
+            <option value="CNY">Китайский юань (CNY)</option>
+        </select>
+        
+        <button id="convertBtn">Конвертировать</button>
+        
+        <div id="result" class="result-block"></div>
+    </div>
+    <script type="module" src="js/calc.js"></script>
 </body>
 </html>
